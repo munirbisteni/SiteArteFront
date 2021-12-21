@@ -319,48 +319,62 @@ input::placeholder{
     background-color:#c4c4c43a;
     transition: ease 0.5s;
 }
+
+
+.mobile{
+    display:none;
+}
 /*não contido ainda*/
 
 @media only screen and (max-width: 400px){
  /* parte complicada */
- .logo_container h1{
-     padding:25px;
-     padding-left:0px;
- }
+    .logo_container h1{
+        padding:25px;
+        padding-left:0px;
+    }
 
- .box-produtos{
-    margin-right: 7.5px;
-    margin-left: 7.5px;
-    width: 6em;
-    font-size: 0.6em;
-}
-.texto-propaganda{
-    font-size: 2em;
-    line-height: 40px;
-}
-.display-rosa{
-    padding: 1em;
-    padding-top:5em;
-}
-.texto-pre-formulario{
-    font-size: 1em;
-    line-height: 1.5em;
-}
-.textarea-input{
-    width:80%;
-}
-.config-button-form {
-    font-size: 15px;
-    width: 19.5%;
-}
-/*inherit from config-button-form*/
-.form-product{
-    width: 12.5%;
-}
-/*inferit from config-button-form*/
-.form-submit {
-    width: 85%;
-}
+    .box-produtos{
+        margin-right: 7.5px;
+        margin-left: 7.5px;
+        width: 6em;
+        font-size: 0.6em;
+    }
+    .texto-propaganda{
+        font-size: 2em;
+        line-height: 40px;
+    }
+    .display-rosa{
+        padding: 1em;
+        padding-top:5em;
+    }
+    .texto-pre-formulario{
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    .textarea-input{
+        width:80%;
+    }
+    .config-button-form {
+        font-size: 15px;
+        width: 19.5%;
+    }
+    /*inherit from config-button-form*/
+    .form-product{
+        width: 12.5%;
+    }
+    /*inferit from config-button-form*/
+    .form-submit {
+        width: 85%;
+    }
+    .tela-pos-processamento{
+        padding:1em;
+    }
+    .mobile{
+        display:block;
+    }
+    .desktop{
+        display:none;
+    }
 }
 @media only screen and (min-width:401px) and (max-width: 600px)
 {
@@ -432,6 +446,15 @@ input::placeholder{
    .form-submit {
        width: 85%;
    }
+   .tela-pos-processamento{
+    padding:1em;
+    }
+    .mobile{
+        display:block;
+    }
+    .desktop{
+        display:none;
+    }
 }
 
 
@@ -512,6 +535,9 @@ input::placeholder{
    .form-submit {
        width: 85%;
    }
+   .tela-pos-processamento{
+    padding:1em;
+}
 }
 @media only screen and (min-width:1001px) and (max-width: 1300px)
 {
@@ -546,7 +572,9 @@ input::placeholder{
         color: black;
         font-size: 20px;
     }
-
+    .tela-pos-processamento{
+        padding:1em;
+    }
 }
 
 @media only screen and (min-width: 1301px) {
