@@ -1,12 +1,12 @@
 function ShowOpcaoLivro(){
     var livro = document.querySelector('#opcaoLivro');
-    livro.style.display = 'block';
+    livro.style.display = 'flex';
     var tela = document.querySelector('#opcaoTela');
     tela.style.display = 'none'; 
 }
 function ShowOpcaoTela(){
     var tela = document.querySelector('#opcaoTela');
-    tela.style.display = 'block'; 
+    tela.style.display = 'flex'; 
     var livro = document.querySelector('#opcaoLivro');
     livro.style.display = 'none';
 }
