@@ -27,31 +27,31 @@
         </div>
     </div>
     
-    <div class="fundoazul">
+    <div class="display-azul">
         <div class="vertical-alinhamento">
             <div class="flex-produtos">
 
-                <div class="boxprodutos">
+                <div class="box-produtos">
                     <img class="produto" src="../../assets/images/icons/bolsa-icone.png">
                     <p class="descricao">Ecobag</p>
                 </div>
-                <div class="boxprodutos">
+                <div class="box-produtos">
                     <img class="produto" src="../../assets/images/icons/caneca-icone.png">   
                     <p class="descricao">Caneca</p>
                 </div>
 
-                <div class="boxprodutos">
+                <div class="box-produtos">
                     <img class="produto" src="../../assets/images/icons/pincel-icone.png">
                     <p class="descricao">Tela</p>
             </div>
-                <div class="boxprodutos">
+                <div class="box-produtos">
                     <img class="produto" src="../../assets/images/icons/livro-icone.png">  
                     <p class="descricao">Livro</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="fundorosa"> 
+    <div class="display-rosa"> 
         <h1 class="texto-propaganda">Quer dar um presente com significado?</h1>
         <p class="texto-pre-formulario">Oi! para fazer um pedido, preencha esse formulário para que possamos te retornar com um orçamento! </p>
         <!--INICIO FORM-->
@@ -73,45 +73,46 @@
                     <p class="texto-formulario">Onde você mora?</p>
                     <div class="container-form">
                         <input type="radio" class="input-radio" name="escolhaCidade"  id="Valinhos"  value="Valinhos">
-                        <label for="Valinhos" class="formtexto label-radio">Valinhos   </label>    
+                        <label for="Valinhos" class="form-texto config-button-form">Valinhos   </label>    
                         <input type="radio" class="input-radio" name="escolhaCidade"  id="Campinas"  value="Campinas"> 
-                        <label for="Campinas"   class="formtexto label-radio">Campinas  </label>
+                        <label for="Campinas"   class="form-texto config-button-form">Campinas  </label>
                         <input type="radio" class="input-radio" name="escolhaCidade"  id="Vinhedo"   value="Vinhedo"> 
-                        <label for="Vinhedo"  class="formtexto label-radio">Vinhedo </label>
+                        <label for="Vinhedo"  class="form-texto config-button-form">Vinhedo </label>
                         </div>
                         <div class="container-form">
-                        <input type="radio" class="input-radio" name="escolhaCidade"  id="Itatiba"   value="Itatiba">  
-                        <label for="Itaitba"  class="formtexto label-radio">Itatiba </label> 
+                        <input type="radio" class="input-radio" name="escolhaCidade"  id="Itatiba"  value="Itatiba">  
+                        <label for="Itatiba"  class="form-texto config-button-form">Itatiba </label> 
                         <input type="radio" class="input-radio" name="escolhaCidade"  id="Louveira"  value="Louveira">  
-                        <label for="Louveira"  class="formtexto label-radio">Louveira </label> 
+                        <label for="Louveira"  class="form-texto config-button-form">Louveira </label> 
                         <input type="radio" class="input-radio" name="escolhaCidade"  id="Indaiatuba" value="Indaiatuba">  
-                        <label for="Indaiatuba"  class="formtexto label-radio">Indaiatuba </label> 
+                        <label for="Indaiatuba"  class="form-texto config-button-form">Indaiatuba </label> 
                 </div>
 
                     <!--PRODUTO-->
                     <p class="texto-formulario">O que você quer?</p>
                     <div class="container-form"> 
                             <input type="radio" class="input-radio" name="escolhaProduto"  id="pintura" onclick="ShowOpcaoTela()"    value="Pintura">
-                            <label for="pintura" class="formtexto label-radio-produto">Tela   </label>    
+                            <label for="pintura" class="form-texto config-button-form form-product">Tela   </label>    
                             <input type="radio" class="input-radio" name="escolhaProduto"  id="livro" onclick="ShowOpcaoLivro()"     value="Livro"> 
-                            <label for="livro"   class="formtexto label-radio-produto">Livro  </label>
+                            <label for="livro"   class="form-texto config-button-form form-product">Livro  </label>
                             <input type="radio" class="input-radio" name="escolhaProduto"  id="caneca" onclick="ShowOpcaoNenhuma()"  value="Caneca"> 
-                            <label for="caneca"  class="formtexto label-radio-produto">Caneca </label>
+                            <label for="caneca"  class="form-texto config-button-form form-product">Caneca </label>
                             <input type="radio" class="input-radio" name="escolhaProduto"  id="ecobag" onclick="ShowOpcaoNenhuma()"  value="Ecobag">  
-                            <label for="ecobag"  class="formtexto label-radio-produto">Ecobag </label> 
+                            <label for="ecobag"  class="form-texto config-button-form form-product">Ecobag </label> 
                     </div>
-                    <!--OPCAOTELA-->
-                    <div id="opcaoTela" class="container-form"> 
+                    <!--opcao-tela-->
+                    <div id="opcao-tela" class="container-form"> 
+                        <input type="radio" class="input-radio" name="escolhaTela"  id="invalid"     value="inválido" checked="checked">
                         <input type="radio" class="input-radio" name="escolhaTela"  id="15x15cm"     value="15x15cm">
-                        <label for="15x15cm" class="formtexto label-radio">15x15cm</label>    
+                        <label for="15x15cm" class="form-texto config-button-form">15x15cm</label>    
                         <input type="radio" class="input-radio" name="escolhaTela"  id="30x30cm"      value="30x30cm"> 
-                        <label for="30x30cm"   class="formtexto label-radio">30x30cm</label>
+                        <label for="30x30cm"   class="form-texto config-button-form">30x30cm</label>
                         <input type="radio" class="input-radio" name="escolhaTela"  id="30x40cm"      value="30x40cm"> 
-                        <label for="30x40cm"  class="formtexto label-radio">30x40cm</label>
+                        <label for="30x40cm"  class="form-texto config-button-form">30x40cm</label>
                     </div>
-                    <!--OPCAOLIVRO-->
-                        <div id="opcaoLivro">
-                            <p class="formtexto"> IMPORTANTE! apenas customizamos a capa do livro, não fazemos qualquer trabalho artístico nas folhas!</p>
+                    <!--opcao-livro-->
+                        <div id="opcao-livro">
+                            <p class="form-texto"> IMPORTANTE! apenas customizamos a capa do livro, não fazemos qualquer trabalho artístico nas folhas!</p>
                         </div>
                 
                 <!--Arquivo
@@ -120,7 +121,7 @@
                     </div>-->
                 <!--BOTAO ENVIAR-->
                     <div>
-                        <input type="submit" value="Enviar" class="button-radio">
+                        <input type="submit" value="Enviar" class="config-button-form form-submit">
                     </div>  
             </div>
         </form>

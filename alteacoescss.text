@@ -1,1 +1,15 @@
-bacg
+backgroundAzulEscuro => background-azul-escuro,
+boxprodutos => box-produtos,
+formtext => form-texto,
+fundoazul => display-azul,
+fundorosa => display-rosa,
+
+tela-de-erro => tela-pos-processamento,
+tela-de-sucesso => tela-pos-processamento,
+
+#opcaoTela => opcao-tela,
+opcaoLivro => opcao-livro,
+
+label-radio => config-button-form,
+label-radio-produto => form-product //INHERIT FROM config-button-form,
+button-radio => form-submit /INHERIT FROM config-button-form,
