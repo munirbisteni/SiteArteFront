@@ -1,0 +1,714 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    text-decoration: none;
+}
+/*não contido ainda*/
+
+.centro {
+    text-align: center;
+}
+.request-text{
+        color:white;
+        font-family: 'Quicksand';
+        font-size: 2em;
+        vertical-align: top;
+        padding: 10px;
+        font-weight: 100;
+        line-height: 90px;
+}
+
+.backgroundAzulEscuro {
+    background: #180738;
+    color:black
+}
+.vertical-alinhamento{
+    margin-top: 100px;
+    vertical-align:middle;
+}
+.boxprodutos{
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 10em;
+}
+
+
+.produto{
+    margin: auto;
+    height:auto;
+    width: auto;
+    display: flex;  
+    border-radius: 10px;
+    
+}
+
+.flex-produtos{
+    display: flex;
+    justify-content: center;    
+    margin-top: 1.5em;;
+}
+
+.descricao{
+    text-align: center;
+    font-family: 'Quicksand';
+    font-size: 1.5em;
+}
+
+.azul{
+    color:#180738;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.fundoazul{
+    background: linear-gradient(to bottom, #180738 0%, #180738 40%, white 30%, white 100%);
+          
+        padding:1em;
+}
+.texto-pre-formulario{
+    font-family: 'Quicksand';
+    font-size: 1.5em;
+    line-height: 120px;
+}
+
+.fundorosa{
+    padding:10em;
+    background: #fff9fd ;  
+
+    text-align: center;
+}
+.telaDeErro{
+    padding:10em;
+    background: #fff9fd ;  
+
+    text-align: center;
+    margin-top:10em;
+}
+.texto-propaganda{
+        font-family: 'Quicksand';
+        font-size: 4em;
+
+        font-weight: 100;
+        line-height: 90px;
+
+}
+
+#opcaoTela{
+    display:none;
+}
+
+#opcaoLivro{
+    display:none;
+}
+/*não contido ainda*/
+
+@media only screen and (max-width: 400px)
+{
+    .header{
+        width: 100%;
+        height: 4em;
+        display:flex;
+        background-color: #180738;
+    }
+
+    .inner_header{
+        width: 82%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .logo_container{
+        height: 100%;
+        display: table;
+        float: left;
+    }
+
+
+    .logo_container h1{
+        padding:15px;
+        padding-left: 5px;
+        color: white;
+        height: 100%;
+        display: ruby-text;
+        vertical-align: middle;
+        font-family: 'Quicksand';
+        font-size: 0.8em;
+        font-weight: 200;
+        margin: revert;
+    }
+
+    .logo_container h1 span{
+        font-weight: 600;
+    }
+
+    .navigation{ 
+        float:right;
+        display:inherit
+    }
+
+    .navigation a {
+        height: 100%;
+        display:table;
+        float: left;
+        padding: 0em 0.5em;
+
+    }
+    .navigation a:last-child{
+        padding-right:0px;
+    }
+
+    .navigation a li {
+        display: table-cell;
+        vertical-align: middle;
+        height : 100%;
+        color: white;
+        font-family: 'Quicksand';
+        font-size: 0.6em;
+    }
+    .logo{
+            padding: inherit;
+            width: 20%;
+            margin:0.8em;   
+            margin-right:0.1em;
+            float:left;
+            
+    }
+ /* parte complicada */
+ 
+    .Apresentation {
+        display:table;
+        width: 100%;
+    }
+
+    .container{
+        font-family: 'Quicksand';
+        text-align: center;
+    }
+
+    .textAlign{
+        padding:35px;
+    }
+    #textoSlide{
+        color: black;
+        font-size: 20px;
+    }
+
+    .credito{ 
+        text-align: right;
+        font-weight: 500;
+        color: black;
+        font-size: 20px;
+    }
+
+    .gata{
+        margin: auto;
+        height:20.8em;
+        width: 20.8em;
+        display: flex;  
+        border-radius: 10px;
+    }
+
+    .backgroundAzul{
+        background: linear-gradient(to bottom, #180738 0%, #180738 30%, white 30%, white 100%);
+        background-color: #180738;  
+        padding:1em;
+    }
+
+    .img-responsive{
+        width: 100%;   
+        padding:2px;
+    }
+    .flex-image{
+        display: flex;
+    }
+
+}
+@media only screen and (min-width:401px) and (max-width: 600px)
+{
+    .header{
+        width: 100%;
+        height: 4em;
+        display:flex;
+        background-color: #180738;
+    }
+
+    .inner_header{
+        width: 82%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .logo_container{
+        height: 100%;
+        display: table;
+        float: left;
+    }
+
+
+    .logo_container h1{
+        padding:13px;
+        padding-left: 0px;
+        padding-right: 0px;
+        color: white;
+        height: 100%;
+        display: ruby-text;
+        vertical-align: middle;
+        font-family: 'Quicksand';
+        font-size: 1em;
+        font-weight: 200;
+        margin: revert;
+    }
+
+    .logo_container h1 span{
+        font-weight: 600;
+    }
+
+    .navigation{ 
+        float:right;
+        display:inherit
+    }
+
+    .navigation a {
+        height: 100%;
+        display:table;
+        float: left;
+        padding: 0em 0.5em;
+
+    }
+    .navigation a:last-child{
+        padding-right:0px;
+    }
+
+    .navigation a li {
+        display: table-cell;
+        vertical-align: middle;
+        height : 100%;
+        color: white;
+        font-family: 'Quicksand';
+        font-size: 0.8em;
+    }
+    .logo{
+            padding: inherit;
+            width: 18%;
+            margin:0.8em;   
+            float:left;
+            
+    }
+
+ /* parte complicada */
+ 
+    .Apresentation {
+        display:table;
+        width: 100%;
+    }
+
+    .container{
+        font-family: 'Quicksand';
+        text-align: center;
+    }
+
+    .textAlign{
+        padding:35px;
+    }
+    #textoSlide{
+        color: black;
+        font-size: 20px;
+    }
+
+    .credito{ 
+        text-align: right;
+        font-weight: 500;
+        color: black;
+        font-size: 20px;
+    }
+
+    .gata{
+        margin: auto;
+        height:20.8em;
+        width: 20.8em;
+        display: flex;  
+        border-radius: 10px;
+    }
+
+    .backgroundAzul{
+        background: linear-gradient(to bottom, #180738 0%, #180738 30%, white 30%, white 100%);
+        background-color: #180738;  
+        padding:1em;
+    }
+
+    .img-responsive{
+        width: 100%;   
+        padding:2px;
+    }
+    .flex-image{
+        display: flex;
+    }
+
+    
+}
+
+
+@media only screen and (min-width:601px) and (max-width: 1000px)
+{
+    .header{
+        width: 100%;
+        height: 4em;
+        display:flex;
+        background-color: #180738;
+    }
+
+    .inner_header{
+        width: 82%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .logo_container{
+        height: 100%;
+        display: table;
+        float: left;
+        padding-bottom: 5px;
+    }
+
+
+    .logo_container h1{
+        padding:8px;
+        color: white;
+        height: 100%;
+        display: ruby-text;
+        vertical-align: middle;
+        font-family: 'Quicksand';
+        font-size: 1.1em;
+        font-weight: 200;
+        margin: revert;
+    }
+
+    .logo_container h1 span{
+        font-weight: 600;
+    }
+
+    .navigation{ 
+        float:right;
+        display:inherit
+    }
+
+    .navigation a {
+        height: 100%;
+        display:table;
+        float: left;
+        padding: 0em 0.5em;
+
+    }
+    .navigation a:last-child{
+        padding-right:0px;
+    }
+
+    .navigation a li {
+        display: table-cell;
+        vertical-align: middle;
+        height : 100%;
+        color: white;
+        font-family: 'Quicksand';
+        font-size: 0.8em;
+    }
+    .logo{
+            margin-top:0.3em;
+            padding: inherit;
+            width: 15%;
+            float:left;
+            
+    }
+
+     /* parte complicada */
+ 
+    .Apresentation {
+        display:table;
+        width: 100%;
+    }
+
+    .container{
+        font-family: 'Quicksand';
+        text-align: center;
+    }
+
+    .textAlign{
+        padding:35px;
+    }
+    #textoSlide{
+        color: black;
+        font-size: 20px;
+    }
+
+    .credito{ 
+        text-align: right;
+        font-weight: 500;
+        color: black;
+        font-size: 20px;
+    }
+
+    .gata{
+        margin: auto;
+        height:20.8em;
+        width: 20.8em;
+        display: flex;  
+        border-radius: 10px;
+    }
+
+    .backgroundAzul{
+        background: linear-gradient(to bottom, #180738 0%, #180738 30%, white 30%, white 100%);
+        background-color: #180738;  
+        padding:1em;
+    }
+
+    .img-responsive{
+        width: 100%;   
+        padding:2px;
+    }
+    .flex-image{
+        display: flex;
+    }
+
+}
+@media only screen and (min-width:1001px) and (max-width: 1300px)
+{
+    .header{
+        width: 100%;
+        height: 4em;
+        display:flex;
+        background-color: #180738;
+    }
+
+    .inner_header{
+        width: 82%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .logo_container{
+        height: 100%;
+        display: table;
+        float: left;
+        padding-bottom: 5px;
+    }
+
+
+    .logo_container h1{
+        padding:8px;
+        color: white;
+        height: 100%;
+        display: ruby-text;
+        vertical-align: middle;
+        font-family: 'Quicksand';
+        font-size: 1.2em;
+        font-weight: 200;
+        margin: revert;
+    }
+
+    .logo_container h1 span{
+        font-weight: 600;
+    }
+
+    .navigation{ 
+        float:right;
+        display:inherit
+    }
+
+    .navigation a {
+        height: 100%;
+        display:table;
+        float: left;
+        padding: 0em 0.5em;
+
+    }
+    .navigation a:last-child{
+        padding-right:0px;
+    }
+
+    .navigation a li {
+        display: table-cell;
+        vertical-align: middle;
+        height : 100%;
+        color: white;
+        font-family: 'Quicksand';
+        font-size: 0.8em;
+    }
+    .logo{
+            margin-top:0.2em;
+            padding: inherit;
+            width:7%;
+            float:left;
+            
+    }
+     /* parte complicada */
+ 
+     .Apresentation {
+        display:table;
+        width: 100%;
+    }
+
+    .container{
+        font-family: 'Quicksand';
+        text-align: center;
+    }
+
+    .textAlign{
+        padding:35px;
+    }
+    #textoSlide{
+        color: black;
+        font-size: 20px;
+    }
+
+    .credito{ 
+        text-align: right;
+        font-weight: 500;
+        color: black;
+        font-size: 20px;
+    }
+
+    .gata{
+        margin: auto;
+        height:20.8em;
+        width: 20.8em;
+        display: flex;  
+        border-radius: 10px;
+    }
+
+    .backgroundAzul{
+        background: linear-gradient(to bottom, #180738 0%, #180738 30%, white 30%, white 100%);
+        background-color: #180738;  
+        padding:1em;
+    }
+
+    .img-responsive{
+        width: 100%;   
+        padding:2px;
+    }
+    .flex-image{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 1301px) {
+    .header{
+        width: 100%;
+        height: 80px;
+        display:block;
+        background-color: #180738;
+    }
+
+    .inner_header{
+        width: 82%;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .logo_container{
+        height: 100%;
+        display: table;
+        float: left;
+    }
+
+
+    .logo_container h1{
+
+        color: white;
+        height: 100%;
+        display: ruby-text;
+        vertical-align: middle;
+        font-family: 'Quicksand';
+        font-size: 2em;
+        font-weight: 200;
+    }
+
+    .logo_container h1 span{
+        font-weight: 600;
+    }
+
+    .navigation{ 
+        float:right;
+        height: 100%;
+    }
+
+    .navigation a {
+        height: 100%;
+        display:table;
+        float: left;
+        padding: 0px 20px;
+
+    }
+    .navigation a:last-child{
+        padding-right:0px;
+    }
+
+    .navigation a li {
+        display: table-cell;
+        vertical-align: middle;
+        height : 100%;
+        color: white;
+        font-family: 'Quicksand';
+        font-size: 1.5em;
+    }
+    .logo{
+            width: 6%;
+            margin:0.6em;   
+            float:center;
+            
+    }
+
+    .ImagemInicio{
+        width: 40%;
+        margin: 2em;
+        float: center;
+     }
+
+        
+        
+    .Apresentation {
+        display:flex;
+        align-items:center;
+        width: 100%;
+    }
+
+    .container{
+        font-family: 'Quicksand';
+        text-align: center;
+    }
+
+    .textAlign{
+        padding:100px;
+    }
+    #textoSlide{
+        color: black;
+        font-size: 30px;
+    }
+
+    .credito{ 
+        text-align: right;
+        font-weight: 500;
+        color: black;
+        font-size: 30px;
+    }
+
+    .gata{
+        height:20.8em;
+        width: 20.8em;  
+        float:left;
+        border-radius: 10px;
+    }
+
+    .backgroundAzul{
+        background: linear-gradient(to bottom, #180738 0%, #180738 30%, white 30%, white 100%);
+        background-color: #180738;  
+        padding:50px;
+    }
+
+    .img-responsive{
+        width: 100%;   
+        padding:2px;
+    }
+    .flex-image{
+        display: flex;
+    }       
+}
