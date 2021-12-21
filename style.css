@@ -252,10 +252,12 @@
 }
 
 .display-azul{
-    background: linear-gradient(to bottom, #180738 0%, #180738 40%, white 30%, white 100%);    
+    background: linear-gradient(to bottom, #180738 0%, #180738 30%, white 30%, white 100%);    
         padding:1em;
 }
-
+.plus40{
+    background: linear-gradient(to bottom, #180738 0%, #180738 40%, white 30%, white 100%);    
+}
 .texto-pre-formulario{
     font-family: 'Quicksand';
     font-size: 1.5em;
