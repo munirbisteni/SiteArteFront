@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Encomenda</title>
+</head>
+<body>
+    <div class="header">
+        <div class="inner_header">
+            <div class="logo_container">
+                <div class="titleMain">
+                    <img class="logo" src="../../assets/images/icons/logo-icone.png">
+                    <a href="/"><h1>Isabela<span>Betini</span></h1></a>
+                </div>
+            </div>
+            <ul class="navigation">
+            
+                <a href="/about/"><li>Sobre</li></a>
+                <!--<a href="#link2"><li>Nós</li></a>-->    
+                <a href="/request/"><li >Encomenda</li></a>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="fundoazul">
+        <div class="vertical-alinhamento">
+            <div class="flex-produtos">
+
+                <div class="boxprodutos">
+                    <img class="produto" src="../../assets/images/icons/bolsa-icone.png">
+                    <p class="descricao">Ecobag</p>
+                </div>
+                <div class="boxprodutos">
+                    <img class="produto" src="../../assets/images/icons/caneca-icone.png">   
+                    <p class="descricao">Caneca</p>
+                </div>
+
+                <div class="boxprodutos">
+                    <img class="produto" src="../../assets/images/icons/pincel-icone.png">
+                    <p class="descricao">Tela</p>
+            </div>
+                <div class="boxprodutos">
+                    <img class="produto" src="../../assets/images/icons/livro-icone.png">  
+                    <p class="descricao">Livro</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fundorosa"> 
+        <h1 class="texto-propaganda">Quer dar um presente com significado?</h1>
+        <p class="texto-pre-formulario">Oi! para fazer um pedido, preencha esse formulário para que possamos te retornar com um orçamento! </p>
+        <!--INICIO FORM-->
+        <div id="infor">
+            <form action="https://formsquash.io/f/6iTREVLbaOgHjLVuZlHi" method="POST">
+            <div class="form-group">
+                    <!--NOME-->
+                    <div>
+                        <input type="text" class="textarea-input" id="nome" required varchar="70" name="nome" placeholder="Nome">
+                    </div>
+                    <!--CONTATO-->
+                    <div>
+                        <input type="email" class="textarea-input" id="email"/ placeholder="Email" required name="email"/>
+                    </div>
+                    <div>
+                        <input type="text" class="textarea-input" id="instagram" placeholder="Instagram (opcional) "name="insta"/>
+                    </div>
+                    <!--CIDADE-->
+                    <p class="texto-formulario">Onde você mora?</p>
+                    <div class="container-form">
+                        <input type="radio" class="input-radio" name="escolhaCidade"  id="Valinhos"  value="Valinhos">
+                        <label for="Valinhos" class="formtexto label-radio">Valinhos   </label>    
+                        <input type="radio" class="input-radio" name="escolhaCidade"  id="Campinas"  value="Campinas"> 
+                        <label for="Campinas"   class="formtexto label-radio">Campinas  </label>
+                        <input type="radio" class="input-radio" name="escolhaCidade"  id="Vinhedo"   value="Vinhedo"> 
+                        <label for="Vinhedo"  class="formtexto label-radio">Vinhedo </label>
+                        </div>
+                        <div class="container-form">
+                        <input type="radio" class="input-radio" name="escolhaCidade"  id="Itatiba"   value="Itatiba">  
+                        <label for="Itaitba"  class="formtexto label-radio">Itatiba </label> 
+                        <input type="radio" class="input-radio" name="escolhaCidade"  id="Louveira"  value="Louveira">  
+                        <label for="Louveira"  class="formtexto label-radio">Louveira </label> 
+                        <input type="radio" class="input-radio" name="escolhaCidade"  id="Indaiatuba" value="Indaiatuba">  
+                        <label for="Indaiatuba"  class="formtexto label-radio">Indaiatuba </label> 
+                </div>
+
+                    <!--PRODUTO-->
+                    <p class="texto-formulario">O que você quer?</p>
+                    <div class="container-form"> 
+                            <input type="radio" class="input-radio" name="escolhaProduto"  id="pintura" onclick="ShowOpcaoTela()"    value="Pintura">
+                            <label for="pintura" class="formtexto label-radio-produto">Tela   </label>    
+                            <input type="radio" class="input-radio" name="escolhaProduto"  id="livro" onclick="ShowOpcaoLivro()"     value="Livro"> 
+                            <label for="livro"   class="formtexto label-radio produto">Livro  </label>
+                            <input type="radio" class="input-radio" name="escolhaProduto"  id="caneca" onclick="ShowOpcaoNenhuma()"  value="Caneca"> 
+                            <label for="caneca"  class="formtexto label-radio-produto">Caneca </label>
+                            <input type="radio" class="input-radio" name="escolhaProduto"  id="ecobag" onclick="ShowOpcaoNenhuma()"  value="Ecobag">  
+                            <label for="ecobag"  class="formtexto label-radio-produto">Ecobag </label> 
+                    </div>
+                    <!--OPCAOTELA-->
+                    <div id="opcaoTela" class="container-form"> 
+                        <input type="radio" class="input-radio" name="escolhaTela"  id="15x15cm"     value="15x15cm">
+                        <label for="15x15cm" class="formtexto label-radio">15x15cm</label>    
+                        <input type="radio" class="input-radio" name="escolhaTela"  id="30x30cm"      value="30x30cm"> 
+                        <label for="30x30cm"   class="formtexto label-radio">30x30cm</label>
+                        <input type="radio" class="input-radio" name="escolhaTela"  id="30x40cm"      value="30x40cm"> 
+                        <label for="30x40cm"  class="formtexto label-radio">30x40cm</label>
+
+                    </div>
+                    <!--OPCAOLIVRO-->
+                        <div id="opcaoLivro">
+                            <p class="formtexto"> IMPORTANTE! apenas customizamos a capa do livro, não fazemos qualquer trabalho artístico nas folhas!</p>
+                        </div>
+                
+                <!--Arquivo
+                    <div id="arquivo">
+                        <input type="file" id="image" name="image" onchange="imagem(event)">
+                    </div>-->
+                <!--BOTAO ENVIAR-->
+                    <div>
+                        <input type="submit" value="Enviar" class="button-radio">
+                    </div>  
+            </div>
+        </form>
+      </div>
+            </div>
+        <script>
+            function imagem(event){
+                const file = event.target.files[0];
+                const reader = new FileReader();
+                reader.onload = function(){
+                    if (typeof reader.result === 'string')
+                    console.log(reader.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        </script> 
+        <script src="./request.js"></script>
+</body>
+</html>
+
+
+

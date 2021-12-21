@@ -33,7 +33,6 @@
     width: 10em;
 }
 
-
 .produto{
     margin: auto;
     height:auto;
@@ -60,6 +59,11 @@
     font-weight: 700;
     font-size: 2.5em;
 }
+
+.formtexto{
+    font-family: 'Quicksand';
+}
+
 .fundoazul{
     background: linear-gradient(to bottom, #180738 0%, #180738 40%, white 30%, white 100%);
           
@@ -70,6 +74,11 @@
     font-size: 1.5em;
     line-height: 120px;
 }
+.texto-formulario{
+    font-family: 'Quicksand';
+    font-size: 1.5em;
+    line-height: 60px;
+}
 
 .fundorosa{
     padding:10em;
@@ -77,12 +86,20 @@
 
     text-align: center;
 }
-.telaDeErro{
+
+.tela-de-sucesso{
     padding:10em;
     background: #fff9fd ;  
-
     text-align: center;
     margin-top:10em;
+    text-align: center;
+}
+.tela-de-erro{
+    padding:10em;
+    background: #fff9fd ;  
+    text-align: center;
+    margin-top:10em;
+    text-align: center;
 }
 .texto-propaganda{
         font-family: 'Quicksand';
@@ -90,7 +107,6 @@
 
         font-weight: 100;
         line-height: 90px;
-
 }
 
 #opcaoTela{
@@ -99,6 +115,116 @@
 
 #opcaoLivro{
     display:none;
+}
+
+.input-radio{
+    display:none;
+}
+
+.label-radio {
+    background: #c4c4c43a;
+    border: #c4c4c400 solid 1px;
+    color: #9c9c9c;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 4px;
+    font-size: 20px;
+    display:flex;
+    width: 11.85%;
+    justify-content: center;
+}
+
+.label-radio-produto{
+    background: #c4c4c43a;
+    border: #c4c4c400 solid 1px;
+    color: #9c9c9c;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 4px;
+    font-size: 20px;
+    display:flex;
+    width: 7.3%;
+    justify-content: center;
+}
+.button-radio {
+    background: #180738;
+    border: #c4c4c400 solid 1px;
+    color: white;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom:15px;
+    padding-left: 30px;
+    padding-right:30px;
+    cursor: pointer;
+    margin: 25px;
+    font-size: 20px;
+    width: 40%;
+
+}
+.button-radio:hover {
+    color: #180738;
+    border: #180738 solid 1px;
+    background: white;
+    transition: ease 0.5s;
+}
+
+.button-radio:before {
+    content: "";
+    border-radius: 50%;
+}
+
+.button-radio:checked + .label-radio {
+    color: #180738;
+    border: #180738 solid 1px;
+    background: white;
+}
+
+
+.label-radio:hover {
+    color: #180738;
+    border: #180738 solid 1px;
+    background: white;
+    transition: ease 0.5s;
+}
+
+.label-radio:before {
+    content: "";
+    border-radius: 50%;
+}
+
+.input-radio:checked + .label-radio {
+    color: #180738;
+    border: #180738 solid 1px;
+    background: white;
+}
+
+.container-form{
+
+    display:flex;
+    justify-content: center;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+input::placeholder{
+    font-family: 'Quicksand';
+    font-size: 16px;
+}
+.textarea-input{
+    border:none;
+    margin:10px;
+    width:40%;
+    padding: 10px;
+    height:50px;
+    outline: none;
+}
+.textarea-input:hover{
+    background-color:#c4c4c43a;
+    transition: ease 0.5s;
 }
 /*não contido ainda*/
 
@@ -188,7 +314,7 @@
     .textAlign{
         padding:35px;
     }
-    #textoSlide{
+    #Slide{
         color: black;
         font-size: 20px;
     }
