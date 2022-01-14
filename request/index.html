@@ -97,7 +97,7 @@
                             <label for="livro"   class="form-texto config-button-form form-product">Livro  </label>
                             <input type="radio" class="input-radio" name="escolhaProduto"  id="caneca" onclick="ShowOpcaoNenhuma()"  value="Caneca"> 
                             <label for="caneca"  class="form-texto config-button-form form-product">Caneca </label>
-                            <input type="radio" class="input-radio" name="escolhaProduto"  id="ecobag" onclick="ShowOpcaoNenhuma()"  value="Ecobag">  
+                            <input type="radio" class="input-radio" name="escolhaProduto"  id="ecobag" onclick="ShowOpcaoEco()"  value="Ecobag">  
                             <label for="ecobag"  class="form-texto config-button-form form-product">Ecobag </label> 
                     </div>
                     <!--opcao-tela-->
@@ -114,12 +114,11 @@
                         <div id="opcao-livro">
                             <p class="form-texto"> IMPORTANTE! apenas customizamos a capa do livro, não fazemos qualquer trabalho artístico nas folhas!</p>
                         </div>
+                        
+                    <div id="opcao-eco">
+                        <p class="form-texto"> IMPORTANTE! Vendida e distribuída por EKO. ! <a href="../eko/">saiba mais</a></p>
+                    </div>
                 
-                <!--Arquivo
-                    <div id="arquivo">
-                        <input type="file" id="image" name="image" onchange="imagem(event)">
-                    </div>-->
-                <!--BOTAO ENVIAR-->
                     <div>
                         <input type="submit" value="Enviar" class="config-button-form form-submit">
                     </div>  
@@ -127,17 +126,7 @@
         </form>
       </div>
             </div>
-        <script>
-            function imagem(event){
-                const file = event.target.files[0];
-                const reader = new FileReader();
-                reader.onload = function(){
-                    if (typeof reader.result === 'string')
-                    console.log(reader.result);
-                }
-                reader.readAsDataURL(file);
-            }
-        </script> 
+
         <script src="./request.js"></script>
 </body>
 </html>

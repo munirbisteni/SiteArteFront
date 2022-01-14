@@ -187,7 +187,10 @@
 #opcao-livro{
     display:none;
 }
-
+#opcao-eco{
+    display:none;
+    justify-content:center;
+}
 .input-radio{
     display:none;
 }
@@ -264,6 +267,11 @@
     font-size: 1.5em;
     line-height: 120px;
 }
+.texto-pre-formulario-eco-text{
+    font-family: 'Quicksand';
+    font-size: 1.5em;
+    line-height: 120px;
+}
 .texto-formulario{
     font-family: 'Quicksand';
     font-size: 1.5em;
@@ -282,7 +290,6 @@
     padding:10em;
     background: #fff9fd ;  
     text-align: center;
-    margin-top:10em;
     text-align: center;
 }
 .texto-propaganda{
@@ -321,7 +328,7 @@ input::placeholder{
 }
 
 .spacement0{
-    line-height: 5em    ;
+    line-height: 5em;
 }
 
 .mobile{
@@ -335,7 +342,14 @@ input::placeholder{
         padding:25px;
         padding-left:0px;
     }
+    .img-eco{
+        width:100%;
+    }
 
+    .texto-pre-formulario-eco-text{
+        font-size: 0.9em;
+        line-height: 1.5em;
+    }
     .box-produtos{
         margin-right: 7.5px;
         margin-left: 7.5px;
@@ -383,7 +397,10 @@ input::placeholder{
 @media only screen and (min-width:401px) and (max-width: 600px)
 {
 
-
+    .texto-pre-formulario-eco-text{
+        font-size: 0.9em;
+        line-height: 1.5em;
+    }
     .logo_container h1{
         padding:22px;
         padding-left: 0px;
@@ -393,6 +410,9 @@ input::placeholder{
 
     }
 
+    .img-eco{
+        width:100%;
+    }
     .navigation a li {
         font-size: 0.8em;
     }
@@ -464,11 +484,17 @@ input::placeholder{
 
 @media only screen and (min-width:601px) and (max-width: 1000px)
 {
-
+    .texto-pre-formulario-eco-text{
+        font-size: 0.9em;
+        line-height: 1.5em;
+    }
     .logo_container{
         padding-bottom: 5px;
     }
 
+    .img-eco{
+        width:100%;
+    }
 
     .logo_container h1{
         padding:8px;
@@ -545,12 +571,18 @@ input::placeholder{
 }
 @media only screen and (min-width:1001px) and (max-width: 1300px)
 {
-
+    .texto-pre-formulario-eco-text{
+        font-size: 0.9em;
+        line-height: 1.5em;
+    }
     .logo_container{
         padding-bottom: 5px;
     }
 
-
+    .img-eco{
+        width:100%;
+    }
+    
     .logo_container h1{
         padding:8px;
         font-size: 1.2em;
